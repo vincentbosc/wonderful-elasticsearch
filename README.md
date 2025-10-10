@@ -4,7 +4,7 @@ Inspired by the great [awesome-search repo](https://github.com/frutik/awesome-se
 
 ## Topics
 
-* [Traditional Search](#traditional-search)
+* [Lexical Search](#lexical-search)
   * [Sorting](#sorting)
 * [Vector Search](#vector-search)
   * [Dense Vectors](#dense-vectors)
@@ -30,14 +30,14 @@ Inspired by the great [awesome-search repo](https://github.com/frutik/awesome-se
 * [Search tutorial](https://www.elastic.co/search-labs/tutorials/search-tutorial/welcome) - app in Flask
 * [How to really do Autocomplete](https://bonsai.io/blog/how-to-really-do-autocomplete/) - blog
 
-## Traditional Search (BM25)
+## Lexical Search (BM25)
 * [Languages with compound words](https://www.elastic.co/search-labs/blog/compound-word-search)
 * [How Sourcegraph leverages BM25F](https://sourcegraph.com/blog/keeping-it-boring-and-relevant-with-bm25f) - blog
 
-  ### Sorting
+### Sorting
 * [Optimizing sort queries](https://www.elastic.co/blog/optimizing-sort-queries-in-elasticsearch-for-faster-results) - blog
 
-  ### Diversity
+### Diversity
 * [Relevance vs Diversity](https://opensourceconnections.com/blog/2019/09/05/diversity-vs-relevance/) - blog
 * [Clustering results using binary vectors](https://www.youtube.com/watch?v=sJU_8mtzH7Y&list=PL_mJOmq4zsHY3Q4uny7NIpTTaq3UK5qfU&index=5) - ElasticOn video
 
@@ -45,24 +45,24 @@ Inspired by the great [awesome-search repo](https://github.com/frutik/awesome-se
 * [A quick introduction to Vector Search](https://www.elastic.co/search-labs/blog/introduction-to-vector-search) - blog
 * [Elasticsearch vs Opensearch performance](https://www.elastic.co/search-labs/blog/elasticsearch-opensearch-vector-search-performance-comparison) - blog
 
-  ### Dense vectors
+### Dense vectors
 
-    #### HSNW
+#### HSNW
 * [Multi HSNW Graph Vector Search](https://www.elastic.co/search-labs/blog/multi-graph-vector-search) - blog
 * [Elastic Meetup - How HSNW works](https://www.youtube.com/watch?v=ly_COu_sHtI) - video (in French)
 * [Brute Force vs HSNW](https://www.elastic.co/search-labs/blog/knn-exact-vs-approximate-search) - blog
 * [Improved filter + HNSW in v9](https://www.elastic.co/search-labs/blog/filtered-hnsw-knn-search) - blog
 
-    #### Quantization
+#### Quantization
 * [Scalar quantization](https://www.elastic.co/search-labs/blog/evaluating-scalar-quantization) - blog
 * [RaBitQ binary quantization](https://www.elastic.co/search-labs/blog/rabitq-explainer-101) - blog
 * [BBQ quantization vs Product Quantization](https://www.elastic.co/search-labs/blog/bit-vectors-elasticsearch-bbq-vs-pq) - blog
 * [Scalar quantization optimization](https://www.elastic.co/search-labs/blog/optimized-scalar-quantization-elasticsearch) - blog
 * [Scalar quantization optimization - Math heavy](https://www.elastic.co/search-labs/blog/scalar-quantization-optimization) - blog
 
-  ### Sparse vectors
+### Sparse vectors
 
-    #### ELSER
+#### ELSER
 
 * [App which compares ELSER and BM25](https://github.com/elastic/elasticsearch-labs/tree/main/example-apps/relevance-workbench) - app in Flask and React (github)
 
@@ -70,24 +70,24 @@ Inspired by the great [awesome-search repo](https://github.com/frutik/awesome-se
 
 * [KNN and filters](https://softwaredoug.com/blog/2025/02/08/elasticsearch-hybrid-search) - blog
 
-  ### Retrievers
+### Retrievers
 * [Retrievers Introduction](https://www.elastic.co/search-labs/blog/elasticsearch-retrievers-ga-8.16.0) - blog
 * [Retrievers using semantic reranking](https://www.elastic.co/search-labs/blog/semantic-reranking-with-retrievers) - blog
 * [Linear Retriever](https://www.elastic.co/search-labs/blog/linear-retriever-hybrid-search)
 
-  ### RRF
+### RRF
 * [Hybrid Search using RRF](https://www.elastic.co/search-labs/blog/hybrid-search-elasticsearch) - blog
 * [Is RRF enough?](https://softwaredoug.com/blog/2024/11/03/rrf-is-not-enough) - blog
 
 ## Rerankers
 
-  ### Semantic rerankers
+### Semantic rerankers
 * [Documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/semantic-reranking.html#semantic-reranking-in-es)
 * [What is a semantic reranker?](https://www.elastic.co/search-labs/blog/elastic-semantic-reranker-part-1) - blog
 * [How to - Use a reranker from Hugging Face](https://www.elastic.co/search-labs/blog/reranking-elasticsearch-hugging-face) - blog
 * [Rethinking rerankers](https://haystackconf.com/eu2024/talk-2/) - Haystack video
  
-  ### LTR
+### LTR
 * [Documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/learning-to-rank.html)
 * [LTR Introduction](https://www.elastic.co/search-labs/blog/elasticsearch-learning-to-rank-introduction) - blog
 * [Personalized search with LTR](https://www.elastic.co/search-labs/blog/personalized-search-elasticsearch-ltr) - blog
@@ -104,7 +104,7 @@ Inspired by the great [awesome-search repo](https://github.com/frutik/awesome-se
 
 ## Benchmarking
 
-  ### Relevance
+### Relevance
 * [Elasticsearch Relevance Studio](https://elastic.github.io/relevance-studio/#/docs/guide/welcome) - framework
 * [What is a judgment list](https://softwaredoug.com/blog/2021/02/21/what-is-a-judgment-list) - blog
 * [Rankeval](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-rank-eval.html) - documentation
@@ -113,12 +113,12 @@ Inspired by the great [awesome-search repo](https://github.com/frutik/awesome-se
 * [BEIR](https://github.com/beir-cellar/beir) - github
 * [Click residual](https://observer.wunderwood.org/2022/08/08/click-residual-a-query-success-metric/)
 
-  ### Esrally
+### Esrally
 * [Official documentation]
 * [Wikipedia example](https://github.com/elastic/rally-tracks/tree/master/wikipedia) - github
 * [Guide to creating custom tracks](https://www.elastic.co/blog/creating-custom-es-rally-tracks-guide) - blog
 
-  ### Useful datasets
+### Useful datasets
 * [Amazon shopping queries](https://github.com/amazon-science/esci-data/tree/main) - github
   * [Example of use](https://frutik.medium.com/playing-with-amazons-shopping-queries-datase-part-i-da24092aefa5) - blog
 * [WANDS](https://github.com/wayfair/WANDS) - github
